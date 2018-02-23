@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Karol portfolio</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="top">
+      <header class="hero">
+        <h1>Hello</h1>
+        <p>I am nuda</p>
+      </header>
+      </div>
+
+    </div>
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="">Technologies</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Portfolio</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="features">
+      <div class="feature">
+
+        <div class="overlay">
+          <p class="description">Tekst przykładowy</p>
+          <img src="images\icons\html.png" alt="HTML5" class="tech_img">
+          <h3>HTML5</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+      </div>
+      </div>
+      <div class="feature">
+
+        <div class="overlay">
+          <p class="description">Tekst przykładowy</p>
+          <img src="images\icons\css.png" alt="CSS3" class="tech_img">
+          <h3>CSS3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+      </div>
+      <div class="feature">
+
+        <div class="overlay">
+          <p class="description">Tekst przykładowy</p>
+          <img src="images\icons\js.png" alt="JS" class="tech_img">
+          <h3>Javascript</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+      </div>
+      <div class="feature">
+
+        <div class="overlay">
+          <p class="description">Tekst przykładowy</p>
+          <img src="images\icons\react.png" alt="React" class="tech_img">
+          <h3>React</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about title">
+      <h2>About me</h2>
+      <img src="images/feature.png" alt="feature" class="about__mockup">
+      <div class="about__details">
+        <h1>Featured project</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Nullam pulvinar orci mauris, ut viverra dolor scelerisque id.</p>
+        <button>Learn More →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery title">
+      <h2>Portfolio</h2>
+
+      <div class="overlay">
+        <p class="description">Some text</p> 
+        <img src="https://source.unsplash.com/random/201x201" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>  
+        <img src="https://source.unsplash.com/random/202x202" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>
+        <img src="https://source.unsplash.com/random/203x203" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>
+        <img src="https://source.unsplash.com/random/204x204" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>
+        <img src="https://source.unsplash.com/random/205x205" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>
+        <img src="https://source.unsplash.com/random/206x206" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>
+        <img src="https://source.unsplash.com/random/207x207" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>
+        <img src="https://source.unsplash.com/random/207x208" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>
+        <img src="https://source.unsplash.com/random/207x209" alt="">
+      </div>
+      <div class="overlay">
+        <p class="description">Some text</p>
+        <img src="https://source.unsplash.com/random/207x210" alt="">
+      </div>
+    </section>
+  </div>
+
+
+  <section class="contact title">
+      <h2>Contact</h2>
+      <div class="socials">
+        <a class="FB grow" target="_blank" href="https://www.facebook.com/"><img src="images\icons\fb.svg" alt="Facebook"></a>
+        <a class="Twitter grow" target="_blank" href="https://twitter.com/"><img src="images\icons\twitter.svg" alt="Twitter"></a>
+        <a class="LinkedIn grow" target="_blank" href="https://www.linkedin.com/"><img src="images\icons\linkedin.svg" alt="LinkedIn"></a>
+        <a class="GooglePlus grow" target="_blank" href="https://github.com/"><img src="images\icons\github.svg" alt="GitHub"></a>
+      </div>
+  </section>
+
+  <section class="footer">
+    <p>Copyright © 2018 Karol K</p>
+  </section>
+
+</body>
+
+
+
+
+
+
+<script>
+  const navButton = document.querySelector('button[aria-expanded]');
+
+  function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
+
+</script>
+
+</html>
