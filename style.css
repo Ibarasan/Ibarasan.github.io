@@ -119,6 +119,7 @@ img {
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  background: var(--yellow2);
 }
 
 .feature {
@@ -139,7 +140,7 @@ img {
 
 .underFeature {
   display: flex;
-  height: 50px;
+  min-height: 50px;
   width: 100vw;
   background: var(--yellow2) url(images/under2.png);
 }
@@ -186,6 +187,7 @@ img {
 
 .gallery {
   display: grid;
+  grid-gap: 10px;
   background: white;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-bottom: 10px;
