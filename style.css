@@ -1,5 +1,6 @@
 :root {
   --yellow: #ffc600;
+  --yellow2: #ffc402;
   --black: #272727;
   --grey: #a8a8a8;
 
@@ -14,8 +15,9 @@
 
 html {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 900;
   font-size: 10px;
   color: var(--black);
@@ -62,24 +64,29 @@ img {
 
 
 .hero {
-  min-height: 700px;
-  background: white url(images/kopia.jpg);
+  min-height: 200px;
+  background: white url(images/header8.png);
   background-size: cover;
-  background-position: bottom left;
-  padding: 150px;
+  background-position: bottom center;
+  padding-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.9;
-  height: 100vh;
-  
-
+  height: 70vh;
 }
 
 .hero > * {
-  background: var(--grey);
-  color: var(--color5);
-  padding: 3px;
+  background: var(--color1);
+  color: white;
+  padding: 5px;
+}
+
+.hero > h1 {
+  font-size: 3.0 vw;
+}
+
+.hero > p {
+  font-size: 2em;
 }
 
 
@@ -102,12 +109,6 @@ img {
   color: var(--color5);
   text-transform: uppercase;
   font-size: 20px;
-  transition: background-color 500ms linear;
-  
-}
-
-.NavButton:hover {
-  background: var(--color3);
 }
 
 [aria-controls="menu-list"] {
@@ -121,21 +122,28 @@ img {
 }
 
 .feature {
-  background: White;
+  background: var(--yellow2);
   text-align: center;
-  box-shadow: 0 0 4px rgba(0,0,0,0.1);
   margin-top: 0;
-  padding: 10px;
 
 }
 
-.feature .icon {
+.feature{
   width: 100%; 
   height: auto;
 }
 
 .feature p {
   color: rgba(0,0,0,0.5);
+}
+
+.underFeature {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column: 1/-1;
+  height: 50px;
+  width: 100vw;
+  background: var(--yellow2) url(images/under2.png);
 }
 
 .overlay {
@@ -155,11 +163,12 @@ img {
   height: 100%;
   left: 0;
   top: 0;
-  background: #b6b6b6;
+  background: #000000e1;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   align-items: center;
   justify-items: center;
+  color: white;
 }
 
 .overlay:hover .description {
@@ -169,7 +178,7 @@ img {
 /* About */
 
 .about {
-  background: var(--color3);
+  background: var(--color5);
   display: grid;
   grid-template-columns: 400px 1fr;
   align-items: center;
@@ -179,8 +188,7 @@ img {
 
 .gallery {
   display: grid;
-  grid-gap: 20px;
-  background: var(--color5);
+  background: white;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-bottom: 10px;
   padding-left: 10px;
