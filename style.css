@@ -169,7 +169,7 @@ img {
   height: 100%;
   left: 0;
   top: 0;
-  background: #000000e1;
+  background: var(--yellow2);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   align-items: center;
