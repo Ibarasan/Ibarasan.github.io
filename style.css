@@ -173,6 +173,7 @@ img {
   transition: opacity 0.5s ease-in-out;
   align-items: center;
   justify-items: center;
+  text-align: center;
   color: black;
   font-size: 20px;
   font-weight: bold;
@@ -200,12 +201,13 @@ img {
 
 .gallery {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 30px;
   background: white;
   grid-template-columns: auto auto auto auto;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
+
 }
 
 .gallery img {
@@ -258,6 +260,12 @@ img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.boxShadow {
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
 /* footer */
